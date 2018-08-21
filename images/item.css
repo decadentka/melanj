@@ -1,0 +1,18 @@
+.pic {
+	
+}
+
+.item-features{
+	clear:both;
+	width:100%;
+}
+
+.feature-name{
+	
+	font-weight:bold;
+	width:200px;
+}
+
+.feature-name:after{
+	text-decoration:underline;
+}

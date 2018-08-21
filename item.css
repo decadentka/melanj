@@ -1,0 +1,62 @@
+.auth{
+	width:1000px;
+	background:#da3636;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+.auth a{
+	float:right;
+	padding-right:20px;
+	color:#fff;
+}
+
+.pic {
+	width:500px;
+}
+
+.item-features{
+	clear:both;
+	width:100%;
+}
+
+.feature-name{	
+	font-weight:bold;
+	width:200px;
+	border-bottom:1px dotted #000;
+}
+
+.feature-name p{	
+	margin:0;
+	border:none;
+}
+
+.description{
+	margin-top:20px;
+}
+
+.cart{
+	float:left;
+	padding:20px;
+	margin:20px 0;
+	color:#fff;
+	background:#da3636;
+	transition:0.2s;
+	border:1px solid #fff;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.cart:hover{
+	color:#da3636;
+	background:#fff;
+	border:1px solid #000;
+}
+
+.share{
+	clear:both;
+}
+
+.share img{
+	width:20px;
+}

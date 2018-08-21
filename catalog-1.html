@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+	<head>
+		<title>Каталог</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="catalog.css">		
+		<link rel="stylesheet" href="left-menu.css">
+
+<script type="text/javascript">
+var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3','sub_menu_4','sub_menu_5','sub_menu_6','sub_menu_7','sub_menu_8','sub_menu_9','sub_menu_10','sub_menu_11','sub_menu_12','sub_menu_13','sub_menu_14','sub_menu_15','sub_menu_16','sub_menu_17','sub_menu_18','sub_menu_19','sub_menu_20','sub_menu_21','sub_menu_22','sub_menu_23','sub_menu_24');
+startList = function allclose() {
+	for (i=0; i < id_menu.length; i++){
+		document.getElementById(id_menu[i]).style.display = "none";
+	}
+}
+function openMenu(id){
+	for (i=0; i == id_menu.length; i++){
+		if (id != id_menu[i]){
+			document.getElementById(id_menu[i]).style.display = "none";
+		}
+	}
+	if (document.getElementById(id).style.display == "block"){
+		document.getElementById(id).style.display = "none";
+	}else{
+		document.getElementById(id).style.display = "block";
+	}
+}
+window.onload=startList;
+</script>
+		
+		
+	</head>
+	<body>
+	<div class="wrapper">
+	<header>
+		<div class="logo-container">
+			<p class="logo"><img src="logo.png" style="max-width:90%;"></p>
+		</div>
+		<div class="address">
+			<p>ТЦ «Айсберг», секция 128</br>
+			Тел. 8-846-999-99-99</p>
+		</div>
+	
+	<div class="menu">
+		<ul>
+			<a href="/"><li>Главная</li></a>
+			<a href="about.html"><li>О компании</li></a>
+			<a href="/"><li>Задать вопрос</li></a>
+			<a href="/"><li>Новости</li></a>
+			<a href="/"><li>Отзывы</li></a>
+			<a href="/"><li>Контакты</li></a>
+			<li><input placeholder="Поиск"></li>
+		</ul>
+		
+		
+	</div>
+	
+	
+	</header>
+	
+	
+	<div class="container">
+		<div class="left-menu">
+		<p class="menu-head">Каталог</p>
+		<p class="menu-part">Женская одежда</p>
+			<ul>
+				<li><a href="#" onclick="openMenu('sub_menu_1');return(false)">Бельё</a>
+					<ul id="sub_menu_1">
+						<li><a href="/">Бюстгальтеры</a></li>
+						<li><a href="/">Корректирующее белье</a></li>
+						<li><a href="/">Предспальное и эротическое белье</a></li>
+						<li><a href="/">Трусы</a></li>
+						<li><a href="/">Майки</a></li>
+						<li><a href="/">Боди/грация</a></li>
+						<li><a href="/">Новинки</a></li>
+						<li><a href="/">Распродажа</a></li>					
+					</ul>				
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_2');return(false)">Одежда</a>
+					<ul id="sub_menu_2">
+						<li><a href="catalog-2.html">Блузки / рубашки</a></li>
+						<li><a href="/">Брюки / бриджи</a></li>
+						<li><a href="/">Джемперы, джерси, водолазки</a></li>
+						<li><a href="/">Жакеты, жилеты</a></li>
+						<li><a href="/">Комплекты</a></li>
+						<li><a href="/">Майки, футболки</a></li>
+						<li><a href="/">Платья</a></li>
+						<li><a href="/">Шорты</a></li>
+						<li><a href="/">Юбки</a></li>
+						<li><a href="/">Новинки</a></li>
+						<li><a href="/">Распродажа</a></li>							
+					</ul>			
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_3');return(false)">Домашняя одежда</a>
+					<ul id="sub_menu_3">
+						<li><a href="/">Комплекты</a></li>
+						<li><a href="/">Костюмы</a></li>
+						<li><a href="/">Сорочки / Платья</a></li>
+						<li><a href="/">Халаты</a></li>	
+						<li><a href="/">Новинки</a></li>
+						<li><a href="/">Распродажа</a></li>							
+					</ul>
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_4');return(false)">Купальники / Пляжная одежда</a>
+					<ul id="sub_menu_4">
+						<li><a href="/">Купальники раздельные</a></li>
+						<li><a href="/">Купальники cплошные</a></li>
+						<li><a href="/">Пляжная одежда</a></li>	
+						<li><a href="/">Новинки</a></li>
+						<li><a href="/">Распродажа</a></li>							
+					</ul>
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_5');return(false)">Чулочно-носочные изделия</a>
+					<ul id="sub_menu_5">
+						<li>Колготки</li>
+						<li>Чулки</li>
+						<li>Легенсы</li>
+						<li>Носки / гольфы</li>	
+						<li>Новинки</li>
+						<li>Распродажа</li>							
+					</ul>				
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_6');return(false)">Аксесcуары</a>
+					<ul id="sub_menu_6">
+						<li>Платки, косынки</li>
+						<li>Шарфы, палантины</li>
+						<li>Шапки</li>
+						<li>Перчатки</li>
+						<li>Новинки</li>
+						<li>Распродажа</li>	
+					</ul>
+				</li>
+			</ul>
+		<p class="menu-part">Мужская одежда</p>
+			<ul>
+				<li><a href="#" onclick="openMenu('sub_menu_7');return(false)">Белье</a>
+					<ul id="sub_menu_7">
+						<li>Кальсоны</li>
+						<li>Майки</li>
+						<li>Термобелье</li>
+						<li>Трусы</li>
+						<li>Плавки</li>
+						<li>Шорты</li>
+						<li>Новинки</li>
+						<li>Распродажа</li>						
+					</ul>	
+				</li>
+				<li>Футболки, майки</li>
+				<li><a href="#" onclick="openMenu('sub_menu_8');return(false)">Одежда для дома и отдыха</a>
+					<ul id="sub_menu_8">
+						<li>Комплекты</li>
+						<li>Брюки, бриджи, шорты</li>
+						<li>Новинки</li>
+						<li>Распродажа</li>						
+					</ul>				
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_9');return(false)">Купальные плавки / одежда для пляжа</a>
+					<ul id="sub_menu_9">
+						<li>Плавки</li>
+						<li>Шорты</li>
+						<li>Бермуды</li>
+						<li>Футболки</li>
+						<li>Новинки</li>
+						<li>Распродажа</li>						
+					</ul>				
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_10');return(false)">Носки</a>
+					<ul id="sub_menu_10">
+						<li>Облегченные</li>
+						<li>Утепленные</li>
+						<li>Всесезонные</li>
+						<li>Новинки</li>
+						<li>Распродажа</li>						
+					</ul>				
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_11');return(false)">Аксессуары</a>
+					<ul id="sub_menu_11">
+						<li>Шарфы</li>
+						<li>Новинки</li>
+						<li>Распродажа</li>							
+					</ul>				
+				</li>	
+			</ul>
+		<p class="menu-part">Детская одежда</p>
+			<ul>
+				<li><a href="#" onclick="openMenu('sub_menu_12');return(false)">Малыши 0-12 мес.</a>
+					<ul id="sub_menu_12">
+						<li>Боди</li>
+						<li>Комбинезоны</li>
+						<li>Комплекты</li>
+						<li>Курточки, жакеты</li>
+						<li>Платья, сарафаны</li>
+						<li>Рубашечки, кофточки</li>
+						<li>Носки</li>
+						<li>Колготки</li>
+						<li>Лосины</li>
+					
+					</ul>				
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_13');return(false)">Для мальчиков</a>
+					<ul id="sub_menu_13">
+						<li><a href="#" onclick="openMenu('sub_menu_15');return(false)">Белье</a>
+							<ul id="sub_menu_15">
+								<li>Кальсоны</li>
+								<li>Комплекты белья</li>
+								<li>Майки</li>
+								<li>Термобелье</li>
+								<li>Трусы</li>
+							</ul>
+						</li>
+						<li><a href="#" onclick="openMenu('sub_menu_16');return(false)">Одежда</a>
+							<ul id="sub_menu_16">
+								<li>Бриджи / брюки</li>
+								<li>Джемперы</li>
+								<li>Комбинезоны</li>
+								<li>Комплекты</li>
+								<li>Костюмы</li>
+								<li>Куртки</li>
+								<li>Одежда для школы</li>
+								<li>Рубашки</li>
+								<li>Футболки, майки</li>
+								<li>Шорты</li>
+							</ul>
+						</li>
+						<li>Пижамы, одежда для дома</li>
+						<li>Спортивно-танцевальная одежда</li>
+						<li><a href="#" onclick="openMenu('sub_menu_17');return(false)">Купальные плавки, пляжная одежда</a>
+							<ul id="sub_menu_17">
+								<li>Плавки</li>
+								<li>Шорты</li>
+								<li>Бермуды</li>
+								<li>Футболки</li>
+							</ul>						
+						</li>
+						<li>Колготки</li>
+						<li>Носки</li>
+						<li><a href="#" onclick="openMenu('sub_menu_18');return(false)">Аксессуары</a>
+							<ul id="sub_menu_18">
+								<li>Варежки, перчатки</li>
+								<li>Шапки</li>
+								<li>Шарфы</li>
+								<li>Другое</li>							
+							</ul>						
+						</li>
+					
+					</ul>				
+				</li>
+				<li><a href="#" onclick="openMenu('sub_menu_14');return(false)">Для девочек</a>
+					<ul id="sub_menu_14">
+						<li><a href="#" onclick="openMenu('sub_menu_19');return(false)">Белье</a>
+							<ul id="sub_menu_19">
+								<li>Бюстгальтеры и полутопы</li>
+								<li>Комплекты</li>
+								<li>Майки</li>
+								<li>Термобелье</li>
+								<li>Трусы</li>
+							</ul>
+						</li>
+						<li><a href="#" onclick="openMenu('sub_menu_20');return(false)">Одежда</a>
+							<ul id="sub_menu_20">
+								<li>Блузки</li>
+								<li>Бриджи / брюки</li>
+								<li>Джемперы, джерси</li>
+								<li>Жакеты, жилеты</li>
+								<li>Комбинезоны</li>
+								<li>Комплекты</li>
+								<li>Костюмы</li>
+								<li>Куртки</li>
+								<li>Майки, туники, футболки</li>
+								<li>Одежда для школы</li>
+								<li>Платья, сарафаны</li>								
+								<li>Шорты</li>
+								<li>Юбки</li>
+							</ul>
+						</li>
+						<li><a href="#" onclick="openMenu('sub_menu_21');return(false)">Одежда для дома и отдыха</a>
+							<ul id="sub_menu_21">
+								<li>Пижамы</li>
+								<li>Сорочки / Платья</li>
+								<li>Халаты</li>
+							</ul>						
+						</li>						
+						<li><a href="#" onclick="openMenu('sub_menu_22');return(false)">Купальники, одежда для пляжа
+							<ul id="sub_menu_22">
+								<li>Сплошные купальники</li>
+								<li>Раздельные купальники</li>
+								<li>Плавки</li>
+								<li>Пляжная одежда</li>
+							</ul>						
+						</li>
+						<li><a href="#" onclick="openMenu('sub_menu_23');return(false)">Колготки</a>			
+							<ul id="sub_menu_23">
+								<li>Капроновые колготки</li>
+								<li>Колготки из хлопка</li>
+								<li>Колготки махровые</li>
+								<li>Лосины</li>
+								<li>Носки / гольфы</li>
+							</ul>
+						</li>
+						<li>Спортивно-танцевальная одежда</li>
+						<li><a href="#" onclick="openMenu('sub_menu_24');return(false)">Аксессуары</a>
+							<ul id="sub_menu_24">
+								<li>Сумочки</li>
+								<li>Перчатки</li>
+								<li>Шапки</li>	
+								<li>Шарфы</li>														
+							</ul>						
+						</li>				
+					</ul>
+				</li>
+					
+	
+		</div>
+		
+		<div class="content">
+		
+		<div class="nav"><a href="/">Каталог</a> &gt; <a href="/">Женская одежда</a></div>
+		
+		<h1>Одежда</h1>
+		
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Блузки / рубашки</p>
+			</div></a>
+			
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Брюки / бриджи</p>
+			</div></a>
+			
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Джемперы, джерси, водолазки</p>
+			</div></a>
+
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Жакеты, жилеты</p>
+			</div></a>
+
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Комплекты</p>
+			</div></a>
+
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Майки, футболки</p>
+			</div></a>
+			
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Платья</p>
+			</div></a>
+
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Шорты</p>
+			</div></a>
+
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Юбки</p>
+			</div></a>
+
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Новинки</p>
+			</div></a>
+
+			<a href="/"><div class="element">
+				<span class="img-element"><img src="element.png">
+				<p class="element-text">Распродажа</p>
+			</div></a>			
+			
+		</div>
+		
+	</div>
+	
+	
+		<footer>
+	<div class="bottom-menu">
+	<h3>Женская одежда</h3>
+	<ul>
+		<li><a href="/">Бельё</a></li>
+		<li><a href="/">Одежда</a></li>
+		<li><a href="/">Домашняя одежда</a></li>
+		<li><a href="/">Купальники / пляжная одежда</a></li>
+		<li><a href="/">Чулочно-носочные изделия</a></li>
+		<li><a href="/">Аксессуары</a></li>
+	
+	</ul>
+		
+	</div>
+	
+	<div class="bottom-menu">
+	<h3>Мужская одежда</h3>
+	<ul>
+		<li><a href="/">Бельё</a></li>
+		<li><a href="/">Футболки / майки</a></li>
+		<li><a href="/">Одежда для дома и отдыха</a></li>
+		<li><a href="/">Купальные плавки / одежда для пляжа</a></li>
+		<li><a href="/">Носки</a></li>
+		<li><a href="/">Аксессуары</a></li>
+	
+	</ul>
+		
+	</div>
+	
+	<div class="bottom-menu">
+	<h3>Детская одежда</h3>
+	<ul>
+		<li><a href="/">Малыши 0-12 мес.</a></li>
+		<li><a href="/">Для мальчиков</a></li>
+		<li><a href="/">Для девочек</a></li>		
+	
+	</ul>
+		
+	</div>
+	
+	<div class="contacts">
+	<h3>Контакты</h3>
+	<p>ТЦ «Айсберг», секция 128</br>
+	Тел. 8-846-999-99-99</p>
+	<h3>Мы в соцсетях</h3>
+	<span class="social"><a href="/"><img src="vk-logo.png"></a></span>
+	<span class="social"><a href="/"><img src="ok-logo.png"></a></span>
+	<span class="social"><a href="/"><img src="tw-logo.png"></a></span>
+	</div>
+	<div class="copyright">Магазин трикотажной одежды «Меланж» © 2016</div>
+	</footer>
+	
+	
+
+	</body>
+
+	</div>
+
+</html>
